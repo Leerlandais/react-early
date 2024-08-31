@@ -25,9 +25,12 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100vw;
+
   /* background-color: aqua; */
 }
 
@@ -66,4 +69,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.footer {
+  font-style: italic;
+  font-family: cursive;
+}
+
+.copyright {
+  transition: transform 5s ease-in-out; /* Adjust duration for a smoother effect */
+}
+
+.copyright:hover {
+  transform: rotateY(-360deg); /* A single full rotation */
 }
