@@ -6,22 +6,7 @@ import Footer from './Footer';
 
 function App() {
     const changeColour = (colour) => {
-        switch (colour) {
-            case "red":
-                console.log("colour picked = red");
-                break;
-            case "green":
-                console.log("colour picked = green");
-                break;
-            case 'blue':
-                console.log("colour picked = blue");
-                break;
-            case "white":
-                console.log("colour picked = white");
-                break;
-            default:
-                console.log("Unknown colour");
-        }
+        document.body.style.backgroundColor = colour;
     };
 
     return (
