@@ -1,8 +1,8 @@
 // App.js
 import React from 'react';
-import Button from './Button';
-import Link from './Link';
-import Footer from './Footer';
+import Button from './components/Button.jsx';
+import Link from './components/Link.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
     const changeColour = (colour) => {
