@@ -100,3 +100,10 @@ button:focus-visible {
 .myButton {
   margin: 10vh 1vw;
 }
+
+.global {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
