@@ -1,14 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Err404 from "./pages/Err404.jsx";
+import NavMenu from './components/NavMenu';
 function App() {
   return (
+      <Router>
     <div className="App">
       <header className="App-header">
+        <NavMenu />
         <img src={logo} className="App-logo" alt="logo" />
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={< Err404 />} />
+        </Routes>
       </header>
+
     </div>
+      </Router>
   );
 }
 
