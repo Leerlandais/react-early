@@ -7,12 +7,14 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Err404 from "./pages/Err404.jsx";
 import NavMenu from './components/NavMenu';
+import BtnHolder from "./components/BtnHolder";
 function App() {
   return (
       <Router>
     <div className="App">
       <header className="App-header">
         <NavMenu />
+        <BtnHolder />
         <img src={logo} className="App-logo" alt="logo" />
         <Routes>
           <Route path="/" element={<Home />} />
