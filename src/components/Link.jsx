@@ -1,4 +1,4 @@
-// Link.js
+
 import { Link as RouterLink } from 'react-router-dom';
 
 function Link({ linkTo, linkName }) {
