@@ -1,6 +1,7 @@
 import Logo from './components/Logo';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -8,6 +9,7 @@ import Contact from './pages/Contact';
 import Err404 from "./pages/Err404.jsx";
 import NavMenu from './components/NavMenu';
 import BtnHolder from "./components/BtnHolder";
+import ButtonCount from "./components/ButtonCount";
 function App() {
   return (
       <Router>
@@ -16,6 +18,7 @@ function App() {
         <NavMenu />
         <BtnHolder />
         <Logo prop={"svgImage"} />
+      <ButtonCount  />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +27,6 @@ function App() {
           <Route path="*" element={< Err404 />} />
         </Routes>
       </header>
-
     </div>
       </Router>
   );
