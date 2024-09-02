@@ -3,27 +3,28 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
+import Colour from './pages/Colour';
+import Counter from './pages/Counter';
+import Hello from './pages/Hello';
 import Err404 from "./pages/Err404.jsx";
+import ToDo from './pages/ToDo.jsx';
 import NavMenu from './components/NavMenu';
-import BtnHolder from "./components/BtnHolder";
-import ButtonCount from "./components/ButtonCount";
+
 function App() {
   return (
       <Router>
     <div className="App">
       <header className="App-header">
         <NavMenu />
-        <BtnHolder />
+
         <Logo prop={"svgImage"} />
-      <ButtonCount  />
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/colour" element={<Colour />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/hello" element={<Hello />} />
+          <Route path="/todo" element={<ToDo />} />
           <Route path="*" element={< Err404 />} />
         </Routes>
       </header>

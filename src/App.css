@@ -69,3 +69,19 @@ button:focus-visible {
 .myButton {
   margin: 10vh 1vw;
 }
+
+.smallBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-size: 0.8em;
+  margin-left: 10px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: green;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+li {
+  margin: 5px 0;
+}
