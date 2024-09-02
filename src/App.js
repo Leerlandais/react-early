@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavMenu />
-
         <Logo prop={"svgImage"} />
+
 
         <Routes>
           <Route path="/" element={<Home />} />

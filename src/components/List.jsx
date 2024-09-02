@@ -23,7 +23,7 @@ function TodoList() {
                 value={text}
                 onChange={e => setText(e.target.value)}
             />
-            <button onClick={() => {
+            <button style={{marginLeft: "10px"}} onClick={() => {
                 setText('');
                 setTodos([{
                     id: todos.length,
