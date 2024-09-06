@@ -10,6 +10,7 @@ import Err404 from "./pages/Err404.jsx";
 import ToDo from './pages/ToDo.jsx';
 import NavMenu from './components/NavMenu';
 
+
 function App() {
   return (
       <Router>
@@ -17,8 +18,6 @@ function App() {
       <header className="App-header">
         <NavMenu />
         <Logo prop={"svgImage"} />
-
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/colour" element={<Colour />} />
